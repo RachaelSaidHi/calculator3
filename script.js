@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {  //java runs only after ht
                     result.textContent = 'Error';
                     console.error(error);
                 }
-                lastInputWasTrig = false;
-                openBrackets = 0;
+                //lastInputWasTrig = false;
+                //openBrackets = 0;
             } else if (['sin', 'cos', 'tan', 'log'].includes(value)) {
                 if (expression.value && /[0-9π)]$/.test(expression.value)) {
                     expression.value += '*';
