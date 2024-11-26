@@ -101,7 +101,7 @@ function calculateExpression(expr) {
     expr = expr.replace(/(\d+|\d*\.\d+)\(/g, '$1*(');
     
     // Remove spaces and replace multiple minuses
-    expr = expr.replace(/\s+/g, '');
+    //expr = expr.replace(/\s+/g, '');
     
     // Process trig and other functions first
     expr = processFunctions(expr);
