@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {  //java runs only after ht
                     console.error(error);
                 }
             } else if (['sin', 'cos', 'tan', 'log'].includes(value)) {
-                if (expression.value && /[0-9π)]$/.test(expression.value)) {
+                if (expression.value && /[0-9π)]$/.test(expression.value)) { //check if implicit multiplication is needed ie if last digit was a number or pi or closing bracket
                     expression.value += '*';
                 }
                 expression.value += value + '(';
